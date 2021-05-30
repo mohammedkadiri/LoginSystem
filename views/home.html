@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/javascript/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/javascript/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <%= name %>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Signup</a>
+                </li> -->
+            </ul>
+            <a href="/users/logout/">
+                <span class="navbar-text">
+                    Logout
+                  </span>
+            </a>
+        </div>
+    </nav>
+
+    <div id="user-profile">
+
+        <div id="prof-details">
+            <div class="form-group row picture-group">
+                <label for="exampleFormControlFile1" class="col-2 col-form-label picture">Upload Picture:</label>
+                <div class="col-10">
+                    <input type="file" class="form-control-file" id="picture" accept="image/*" onchange="document.getElementById('profiler').src=window.URL.createObjectURL(this.files[0])">
+                </div>
+            </div>
+            <div id="profile-container">
+                <img id="profiler" alt="profile image">
+            </div>
+            <p class="prof-desc"><span class="font-weight-bold">Name: </span>
+                <span id="data-values"><%= name %></span>
+            </p>
+            <p class="prof-desc"><span class="font-weight-bold">City: </span>
+                <span id="data-values"><%= city %></span>
+            </p>
+            <p class="prof-desc"><span class="font-weight-bold">Prof: </span>
+                <span id="data-values"><%= prof %></span>
+            </p>
+            <p class="prof-desc"><span class="font-weight-bold">Email: </span>
+                <span id="data-values"><%= email %></span>
+            </p>
+            <p class="prof-desc"><span class="font-weight-bold">Salary: </span>
+                <span id="data-values"><%= salary %></span>
+            </p>
+            <p class="prof-desc"><span class="font-weight-bold">Gender: </span>
+                <span id="data-values"><%= gender %></span>
+            </p>
+        </div>
+        <div id="about-me">
+            <h3 class="divider">ABOUT ME</h3>
+            <p class="prof-desc"><span class="font-weight-bold">Civil State: </span>
+                <span id="data-values"><%= state %><br></span>
+                <span class="font-weight-bold">DOB: </span>
+                <span id="data-values"><%= day %>/<%= month %>/<%= year %><br></span>
+                <span class="font-weight-bold">Hobbies: </span>
+                <span id="data-values"><%= hobby %><br></span>
+                <span class="font-weight-bold">Favourite: </span>
+                <span id="data-values"><%= favourite %><br></span>
+            </p>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>
+
+</html>

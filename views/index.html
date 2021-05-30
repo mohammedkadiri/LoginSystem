@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/javascript/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Login and Signup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="container">
+        <h4>Login or register <br>from here to access</h4>
+        <h6 class="errors">Please Fix the Errors to register!</h6>
+        <div class="details">
+            <div class="form-group row name-group">
+                <label for="example-text-input" class="col-2 col-form-label name">Name: </label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="Artisanal kale" id="name" required>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row dob-group">
+                <label for="example-date-input" class="col-2 col-form-label text-white">DOB</label>
+                <div class="col-10">
+                    <input class="form-control" type="date" value="2011-08-19" id="dob">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row city-group">
+                <label for="example-text-input" class="col-2 col-form-label city">City of Birth: </label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="London" id="city">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row gender-group">
+                <label for="example-email-input" class="col-2 col-form-label gender">Gender:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="gender-m" value="male">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="gender-f" value="female">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row hobby-group">
+                <label for="example-email-input" class="col-2 col-form-label hobby">Hobbies:</label>
+                <div class="col-10">
+                    <input class="form-control" type="email" value="Hobbies" id="hobbies">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row state-group">
+                <label for="example-email-input" class="col-2 col-form-label state">Civil State:</label>
+                <div class="col-10">
+                    <input class="form-control" type="email" value="Civil State" id="state">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row prof-group">
+                <label for="example-email-input" class="col-2 col-form-label prof">Prof:</label>
+                <div class="col-10">
+                    <input class="form-control" type="email" value="Profession" id="prof">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row salary-group">
+                <label for="example-email-input" class="col-2 col-form-label salary">Salary per Year:</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="35000" id="salary">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row favourite-group">
+                <label for="example-email-input" class="col-2 col-form-label favourite">Favourite:</label>
+                <div class="col-10">
+                    <input class="form-control" type="email" value="Favourite" id="favourite">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="example-email-input" class="col-2 col-form-label email">Email:</label>
+                <div class="col-10">
+                    <input class="form-control" type="email" value="bootstrap@example.com" id="email">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label password">Password:</label>
+                <div class="col-10">
+                    <input class="form-control" type="password" value="Artisanal kale" id="password">
+                </div>
+            </div>
+
+            <div class="form-group login-form">
+                <input type="button" id="login-submit" value="Log In" class="btn btn-primary">&nbsp;<a href="" id="reg">Sign up here </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

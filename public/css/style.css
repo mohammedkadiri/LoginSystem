@@ -1,0 +1,100 @@
+html,
+body {
+    height: 100%
+}
+
+#container {
+    margin-top: 2%;
+    width: 28%;
+    height: 1200px;
+    background-color: #343A41;
+}
+
+h4 {
+    padding-top: 5%;
+    text-align: center;
+    color: white
+}
+
+.details {
+    margin-top: 20%;
+    width: 100%;
+    height: 1300px;
+}
+
+input[type='radio'] {
+    transform: scale(2);
+}
+
+.gender {
+    margin-right: 10%;
+}
+
+.form-check {
+    margin-left: 10%;
+}
+
+.login-form {
+    margin-left: 30%;
+}
+
+label {
+    color: white;
+}
+
+#user-profile {
+    margin-top: 2%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#profile-container {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+
+/* .picture-group {
+    width: 40
+} */
+
+#prof-details {
+    margin-top: 2%;
+    width: 18%;
+    height: 90%;
+}
+
+#about-me {
+    margin-top: 2%;
+    width: 25%;
+    height: 60%;
+}
+
+.prof-desc {
+    padding: 1%;
+    color: dimgray;
+    text-align: center;
+}
+
+#data-values {
+    padding: 0.5%;
+    color: dimgray;
+}
+
+.divider {
+    text-align: center;
+    color: dimgray;
+    padding-top: 2%;
+    border-bottom: 1px solid dimgray;
+}
+
+#profiler {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
